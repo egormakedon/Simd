@@ -1,0 +1,107 @@
+<!--
+@author: Весь код данной лабораторной работы полностью разработан ст. группы 521701 Македоном Е.А.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>МРЗвИС 2лб</title>
+    <style>
+        #matrixA {
+            text-align: center;
+        }
+
+        #matrixB {
+            text-align: center;
+        }
+
+        #matrixC {
+            text-align: center;
+        }
+
+        #T1 {
+            text-align: center;
+        }
+
+        #Tn {
+            text-align: center;
+        }
+
+        #Ky {
+            text-align: center;
+        }
+
+        #e {
+             text-align: center;
+         }
+
+        #D {
+            text-align: center;
+        }
+    </style>            <!--Подключение css, центрирование данных в таблицах-->
+</head>
+<body>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>     <!--Подключение библиотеки google charts для рисования графиков-->
+<script type="text/javascript" src = "js.js"></script>                  <!--Подключение основного скрипта выполнения программы-->
+
+P:
+<input type="text" value="" onchange="setP(this.value)">
+
+M:
+<input type="text" value="" onchange="setM(this.value)">
+
+Q:
+<input type="text" value="" onchange="setQ(this.value)"><br><br>
+
+t1(сложение):
+<input type="text" value="" onchange="setT1(this.value)">
+
+t2(вычитание):
+<input type="text" value="" onchange="setT2(this.value)">
+
+t3(умножение):
+<input type="text" value="" onchange="setT3(this.value)">
+
+t4(сравнение):
+<input type="text" value="" onchange="setT4(this.value)">
+
+t5(модуль):
+<input type="text" value="" onchange="setT5(this.value)"><br><br>
+
+n:
+<input type="text" value="" onchange="setN(this.value)"><br><br>
+
+<input type="button" value="run" onclick="run()"></inputbutton><br><br>
+
+A:
+<table id="matrixA" border="1" width="" height=""></table><br>
+
+B:
+<table id="matrixB" border="1" width="" height=""></table><br>
+
+C:
+<table id="matrixC" border="1" width="" height=""></table><br>
+
+T1:
+<table id="T1" border="1" width="" height=""></table><br>
+
+Tn:
+<table id="Tn" border="1" width="" height=""></table><br>
+
+Ky:
+<table id="Ky" border="1" width="" height=""></table><br>
+
+e:
+<table id="e" border="1" width="" height=""></table><br>
+
+D:
+<table id="D" border="1" width="" height=""></table><br>
+
+<div id="chart1"></div><br>
+<div id="chart2"></div><br>
+<div id="chart3"></div><br>
+<div id="chart4"></div><br>
+<div id="chart5"></div><br>
+<div id="chart6"></div><br>
+</body>
+</html>
